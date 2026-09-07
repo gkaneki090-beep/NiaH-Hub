@@ -17,7 +17,8 @@ local Window = Rayfield:CreateWindow({
       FileName = "NiahKey",
       SaveKey = true,
       GrabKeyFromSite = true, -- Ativa a leitura da chave direto de um link
-      Key = {"COLE_AQUI_O_LINK_RAW_DO_ARQUIVO_KEY.TXT"} -- Substitua pelo link Raw do seu key.txt
+      Key = {"https://raw.githubusercontent.com/gkaneki090-beep/NiaH-Hub/main/Key.txt
+            "} -- Substitua pelo link Raw do seu key.txt
    }
 })
 
