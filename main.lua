@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Niah Hub",
-   LoadingTitle = "Loading Niah Hub...",
+   LoadingTitle = "Carregando Niah Hub...",
    LoadingSubtitle = "by Script",
    ConfigurationSaving = {
       Enabled = true,
@@ -11,13 +11,23 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = true,
    KeySettings = {
-      Title = "Key System",
-      Subtitle = "Link Required",
-      Note = "Complete the link to get the key.",
+      Title = "Niah Hub - Key System",
+      Subtitle = "Get your key to continue",
+      Note = "Complete the shortener link to get the key.",
       FileName = "NiahKey",
       SaveKey = true,
-      GrabKeyFromSite = false,
-      Key = {"EXEMPLO_CHAVE_2026"}
+      GrabKeyFromSite = true, -- Ativa a leitura da chave direto de um link
+      Key = {"COLE_AQUI_O_LINK_RAW_DO_ARQUIVO_KEY.TXT"} -- Substitua pelo link Raw do seu key.txt
    }
 })
 
+-- Exemplo de aba inicial para o hub abrir sem erros
+local Tab = Window:CreateTab("Principal", 4483362458)
+local Section = Tab:CreateSection("Geral")
+
+Tab:CreateButton({
+   Name = "Botão de Teste",
+   Callback = function()
+      print("Niah Hub funcionando!")
+   end,
+})
